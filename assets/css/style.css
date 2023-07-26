@@ -6,6 +6,10 @@
     font-size: 16px;
     font-weight: 400;
 }
+h2{
+    font-size: 48px;
+    font-weight: 700;
+}
 .single-items::after{
     content: '';
     width: 100%;
@@ -27,4 +31,18 @@
 	bottom: -65px;
 	height: 165px;
 	right: 10%;
+    align-items: center;
 }
+.single-overlay img {
+	width: 100px;
+	height: 85px;
+	object-fit: cover;
+}
+.days {
+	margin: 0 20px;
+	text-align: center;
+}
+/* .deal-title{
+    max-width: 300px;
+    width: 100%;
+} */
