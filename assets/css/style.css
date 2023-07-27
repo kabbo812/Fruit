@@ -10,6 +10,15 @@ h2{
     font-size: 48px;
     font-weight: 700;
 }
+.fa-magnifying-glass {
+	right: 14px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #aca4a4;
+}
+.mobile-menu {
+    display: none;
+}
 .single-items::after{
     content: '';
     width: 100%;
@@ -18,6 +27,7 @@ h2{
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
+    border-radius: 8px;
 }
 .single-items {
 	display: flex;
@@ -42,8 +52,11 @@ h2{
 	margin: 0 20px;
 	text-align: center;
 }
+.deal-title, .team-title {
+	max-width: 600px;
+}
 .team-area{
-    background: url('../images/banner1.png')no-repeat scroll center  100%;
+    background: url('../images/banner1.png') no-repeat scroll center top 100%;
     width: 100%;
     z-index: 999;
 }
@@ -57,4 +70,22 @@ h2{
     background: rgba(0, 0, 0, 0.7);
     z-index: -1;
     border-radius: 6px;
+}
+.left-content h3::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #aca4a4;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+.right-content h3::before{
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #aca4a4;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
 }

@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <header class="bg-[#F85559] capitalize xl:container mx-auto">
-        <div class="container mx-auto">
-            <div class="flex justify-between items-center">
-                <nav>
+    <header class="header-area bg-[#F85559] capitalize xl:container mx-auto rounded-full">
+        <div>
+            <div class="flex justify-between items-center mx-8 flex-wrap">
+                <nav class="header-menu">
                     <ul class="flex ">
                         <li><a class="py-7 px-3 inline-block "  href="#">home</a></li>
                         <li><a class="py-7 px-3 inline-block " href="#">about us</a></li>
@@ -32,17 +32,21 @@
                     <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
                     <h4 class="text-3xl font-bold ml-3">fruit bust</h4>
                 </div>
-                <div class="search">
-                    <input class="p-2 rounded-3xl" type="text" placeholder="Search here">
+                <div class="search relative">
+                    <input class="py-1.5 px-2 rounded-3xl" type="text" placeholder="Search here">
+                    <span><i class="absolute fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <div class="mobile-menu">
+                  <a class="" href="#"><i class="fa-solid fa-bars"></i></a>
                 </div>
             </div>
         </div>
     </header>
-    <main class="xl:container mx-auto">
+    <main class="xl:container  mx-auto">
         <!-- Banner Area Start -->
      <section class="mt-10 relative">
             <div class="carousel w-full">
-                <div id="slide1" class="carousel-item single-items relative w-full ">
+                <div id="slide1" class="carousel-item single-items relative w-full rounded-md">
                   <img src="assets/images/banner1.png" class="w-full" />
                  <div class="text absolute z-10">
                     <h1 class="text-7xl font-extrabold">Exotic tastes at your<br>doorstep</h1>
@@ -50,11 +54,11 @@
                     <a class="btn btn-error text-white" href="#">Shop Now</a>
                  </div>
                   <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
+                    <a href="#slide4" class="btn arrow btn-circle">❮</a> 
+                    <a href="#slide2" class="btn arrow btn-circle">❯</a>
                   </div>
                 </div> 
-                <div id="slide2" class="carousel-item relative w-full single-items">
+                <div id="slide2" class="carousel-item relative w-full single-items ">
                   <img src="assets/images/banner2.png" class="w-full" />
                   <div class="text absolute z-10">
                     <h1 class="text-7xl font-extrabold">Exotic tastes at your<br>doorstep</h1>
@@ -62,8 +66,8 @@
                     <a class="btn btn-error text-white" href="#">Shop Now</a>
                  </div>
                   <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+                    <a href="#slide1" class="btn arrow btn-circle">❮</a> 
+                    <a href="#slide3" class="btn arrow btn-circle">❯</a>
                   </div>
                 </div> 
                 <div id="slide3" class="carousel-item relative w-full single-items">
@@ -74,8 +78,8 @@
                     <a class="btn btn-error text-white" href="#">Shop Now</a>
                  </div>
                   <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
+                    <a href="#slide2" class="btn arrow btn-circle">❮</a> 
+                    <a href="#slide4" class="btn arrow btn-circle">❯</a>
                   </div>
                 </div> 
                 <div id="slide4" class="carousel-item relative w-full single-items">
@@ -86,8 +90,8 @@
                     <a class="btn btn-error text-white" href="#">Shop Now</a>
                  </div>
                   <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+                    <a href="#slide3" class="btn arrow btn-circle">❮</a> 
+                    <a href="#slide1" class="btn arrow btn-circle">❯</a>
                   </div>
                 </div>
               </div>
@@ -114,39 +118,42 @@
                 </div>
               </div>
         </section>
-      
-        <section class="mt-28">
-            <div class="container ">
-                <div class="deal-area flex justify-between  my-7">
+      <!-- Deal Area Start -->
+        <section class="mt-28 deal-section">
+            <div class=" ">
+                <div class="deal-area flex justify-between flex-wrap  my-7">
                     <div class="deal-title">
                         <h2 class="font-extrabold text-5xl pb-4">Deal of the day</h2>
-                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old</div>
+                        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</div>
                    <div class="time flex justify-between">
                     <div class="days">
                       <h2 class="font-extrabold text-5xl">15</h2>
                       <p>days</p>
                     </div>
+                    <span class="text-3xl font-bold">:</span>
                     <div class="days">
                       <h2 class="font-extrabold text-5xl">08</h2>
                       <p>hours</p>
                     </div>
+                    <span class="text-3xl font-bold">:</span>
                     <div class="days">
                       <h2 class="font-extrabold text-5xl">22</h2>
                       <p>minute</p>
                     </div>
+                    <span class="text-3xl font-bold">:</span>
                     <div class="days">
                       <h2 class="font-extrabold text-5xl">56</h2>
                       <p>second</p>
                     </div>
                    </div>
                 </div>
-                <div class="card-items flex gap-5">
-                  <div class="card w-96 bg-base-100 border rounded-lg">
+                <div class="card-items flex  gap-5">
+                  <div class="card w-96 bg-base-100 border border-slate-700 rounded-lg">
                     <figure class="px-10 pt-10">
                       <img src="assets/images/fruit6.png" alt="fruit" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <p class=" pb-2 border-b-[1px]">$12.85 - $18.96</p>
+                      <p class=" pb-2 border-b-[1px] border-slate-600">$12.85 - $18.96</p>
                       <p class="capitalize text-stone-400">apple</p>
                       <div class="rating">
                         <span><i class="fa-solid fa-star"></i></span>
@@ -156,16 +163,36 @@
                         <span><i class="fa-solid fa-star"></i></span>
                       </div>
                       <div class="card-actions">
-                        <button class="capitalize text-red-400">details</button>
+                        <button class="capitalize text-red-400" onclick="my_modal_1.showModal()">details</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_1" class="modal">
+                          <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+                            <img src="assets/images/fruit6.png" alt="image">
+                            <h3 class="font-bold text-lg capitalize pt-7">apple</h3>
+                            <p class="py-4">Professional employees are there for you to pick the most<br>amazing and fresh fruits.</p>
+                            <div class="rating">
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                              <button class="btn btn-error">buy now</button>
+                            </div>
+                          </form>
+                        </dialog>
                       </div>
                     </div>
                   </div>
-                  <div class="card w-96 bg-base-100 border rounded-lg">
+                  <div class="card w-96 bg-base-100 border border-slate-700 rounded-lg">
                     <figure class="px-10 pt-10">
                       <img src="assets/images/fruit7.png" alt="fruit" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <p class=" pb-2 border-b-[1px]">$12.85 - $18.96</p>
+                      <p class=" pb-2 border-b-[1px] border-slate-600">$12.85 - $18.96</p>
                       <p class="capitalize text-stone-400">orange</p>
                       <div class="rating">
                         <span><i class="fa-solid fa-star"></i></span>
@@ -175,16 +202,36 @@
                         <span><i class="fa-solid fa-star"></i></span>
                       </div>
                       <div class="card-actions">
-                        <button class="capitalize text-red-400">details</button>
+                        <button class="capitalize text-red-400" onclick="my_modal_2.showModal()">details</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_2" class="modal">
+                          <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+                            <img src="assets/images/fruit7.png" alt="image">
+                            <h3 class="font-bold text-lg capitalize pt-7">orange</h3>
+                            <p class="py-4">Professional employees are there for you to pick the most<br>amazing and fresh fruits.</p>
+                            <div class="rating">
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                              <button class="btn btn-error">buy now</button>
+                            </div>
+                          </form>
+                        </dialog>
                       </div>
                     </div>
                   </div>
-                  <div class="card w-96 bg-base-100 rounded-lg border">
+                  <div class="card w-96 bg-base-100 rounded-lg border border-slate-700">
                     <figure class="px-10 pt-10">
                       <img src="assets/images/fruit8.png" alt="fruit" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <p class=" pb-2 border-b-[1px]">$12.85 - $18.96</p>
+                      <p class=" pb-2 border-b-[1px] border-slate-600">$12.85 - $18.96</p>
                       <p class="capitalize text-stone-400">red dragon</p>
                       <div class="rating">
                         <span><i class="fa-solid fa-star"></i></span>
@@ -194,16 +241,36 @@
                         <span><i class="fa-solid fa-star"></i></span>
                       </div>
                       <div class="card-actions">
-                        <button class="capitalize text-red-400">details</button>
+                        <button class="capitalize text-red-400" onclick="my_modal_3.showModal()">details</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_3" class="modal">
+                          <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+                            <img src="assets/images/fruit8.png" alt="image">
+                            <h3 class="font-bold text-lg capitalize pt-7">red dragon</h3>
+                            <p class="py-4">Professional employees are there for you to pick the most<br>amazing and fresh fruits.</p>
+                            <div class="rating">
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                              <button class="btn btn-error">buy now</button>
+                            </div>
+                          </form>
+                        </dialog>
                       </div>
                     </div>
                   </div>
-                  <div class="card w-96 bg-base-100 rounded-lg border">
+                  <div class="card w-96 bg-base-100 border-slate-700 rounded-lg border">
                     <figure class="px-10 pt-10">
                       <img src="assets/images/fruit9.png" alt="fruit" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <p class=" pb-2 border-b-[1px]">$12.85 - $18.96</p>
+                      <p class=" pb-2 border-b-[1px] border-slate-600">$12.85 - $18.96</p>
                       <p class="capitalize text-stone-400">banana</p>
                       <div class="rating">
                         <span><i class="fa-solid fa-star"></i></span>
@@ -213,7 +280,27 @@
                         <span><i class="fa-solid fa-star"></i></span>
                       </div>
                       <div class="card-actions">
-                        <button class="capitalize text-red-400">details</button>
+                        <button class="capitalize text-red-400" onclick="my_modal_4.showModal()">details</button>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_4" class="modal">
+                          <form method="dialog" class="modal-box flex flex-col items-center justify-center">
+                            <img src="assets/images/fruit9.png" alt="image">
+                            <h3 class="font-bold text-lg capitalize pt-7">banana</h3>
+                            <p class="py-4">Professional employees are there for you to pick the most<br>amazing and fresh fruits.</p>
+                            <div class="rating">
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                              <span><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <div class="modal-action">
+                              <!-- if there is a button in form, it will close the modal -->
+                              <button class="btn">Close</button>
+                              <button class="btn btn-error">buy now</button>
+                            </div>
+                          </form>
+                        </dialog>
                       </div>
                     </div>
                   </div>
@@ -225,9 +312,9 @@
         </section>
         <!-- Team Section Start -->
         <section class="team-area relative rounded-md mt-28 py-20">
-          <div class="team-title text-center">
+          <div class="team-title text-center mx-auto">
             <h2 class="font-extrabold text-5xl">Meet the team section</h2>
-            <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+            <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <div class="team-member flex justify-evenly pt-10">
               <div class="single-team-member flex flex-col items-center text-center">
@@ -288,25 +375,91 @@
               </div>
           </div>
         </section>
-        
-
-
+        <!-- Choose section start -->
+        <section class="py-20">
+          <div class="team-title text-center mx-auto">
+            <h2 class="font-extrabold text-5xl">Meet the team section</h2>
+            <p class="py-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br>Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="choose-items flex gap-7 justify-between items-center mt-10">
+            <div class="single-choose flex flex-col gap-5">
+              <div class="choose-items flex gap-4">
+                <div class="items-image w-14 h-10 rounded-full flex items-center justify-center bg-stone-400">
+                  <img class=" object-cover" src="assets/images/group 1.png" alt="image">
+                </div>
+                <div class="items-content left-content">
+                  <h3 class="font-extrabold text-xl relative">Dedicated Team</h3>
+                  <p class="text-stone-400 mt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="choose-items flex gap-4">
+                <div class="items-image w-14 h-10 rounded-full flex items-center justify-center bg-stone-400">
+                  <img class=" object-cover" src="assets/images/Group 54.png" alt="image">
+                </div>
+                <div class="items-content left-content">
+                  <h3 class="font-extrabold text-xl relative">Fresh is Best</h3>
+                  <p class="text-stone-400 mt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="choose-items flex gap-4">
+                <div class="items-image w-14 h-10 rounded-full flex items-center justify-center bg-stone-400">
+                  <img class=" object-cover" src="assets/images/Group 55.png" alt="image">
+                </div>
+                <div class="items-content left-content">
+                  <h3 class="font-extrabold text-xl relative">Gift Certificates</h3>
+                  <p class="text-stone-400 mt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <div class="single-choose w-100">
+              <img class="w-full" src="assets/images/whychoose1.png" alt="image">
+            </div>
+            <div class="single-choose text-right flex flex-col gap-5">
+              <div class="choose-items flex gap-4">
+                <div class="items-image order-1 w-14 h-10 rounded-full flex items-center justify-center bg-stone-400">
+                  <img class=" object-cover" src="assets/images/Group 56.png" alt="image">
+                </div>
+                <div class="items-content right-content">
+                  <h3 class="font-extrabold text-xl relative">Integrated Supplier</h3>
+                  <p class="text-stone-400 mt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="choose-items flex gap-4">
+                <div class="items-image order-1 w-14 h-10 rounded-full flex items-center justify-center bg-stone-400">
+                  <img class=" object-cover" src="assets/images/Vector.png" alt="image">
+                </div>
+                <div class="items-content right-content">
+                  <h3 class="font-extrabold text-xl relative">Sustainable Practice</h3>
+                  <p class="text-stone-400 mt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="choose-items flex gap-4">
+                <div class="items-image order-1 w-14 h-10 rounded-full flex items-center justify-center bg-stone-400">
+                  <img class=" object-cover" src="assets/images/like 1.png" alt="image">
+                </div>
+                <div class="items-content right-content">
+                  <h3 class="font-extrabold text-xl relative">The Benefits Only</h3>
+                  <p class="text-stone-400 mt-5">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
-
-    <footer class="footer footer-center p-10 bg-black text-primary-content">
+   <footer class="footer footer-center p-10 bg-black text-primary-content">
         <div class="logo flex items-center">
             <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
             <h4 class="text-3xl font-bold ml-3">fruit bust</h4>
         </div>
         <div class="footer-menu">
             <nav>
-                <ul class="flex ">
-                    <li><a class="py-3 px-3 capitalize"  href="#">home</a></li>
-                    <li><a class="py-3 px-3 capitalize" href="#">about us</a></li>
-                    <li><a class="py-3 px-3 capitalize" href="#">shop</a></li>
-                    <li><a class="py-3 px-3 capitalize" href="#">all fruits</a></li>
-                    <li><a class="py-3 px-3 capitalize" href="#">support</a></li>
-                    <li><a class="py-3 px-3 capitalize" href="#">my account</a></li>
+                <ul class="flex flex-wrap gap-5 items-center justify-center">
+                    <li><a class=" capitalize"  href="#">home</a></li>
+                    <li><a class=" capitalize" href="#">about us</a></li>
+                    <li><a class=" capitalize" href="#">shop</a></li>
+                    <li><a class=" capitalize" href="#">all fruits</a></li>
+                    <li><a class=" capitalize" href="#">support</a></li>
+                    <li><a class=" capitalize" href="#">my account</a></li>
                 </ul>
             </nav>
         </div>
