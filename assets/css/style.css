@@ -42,7 +42,19 @@ h2{
 	margin: 0 20px;
 	text-align: center;
 }
-/* .deal-title{
-    max-width: 300px;
+.team-area{
+    background: url('../images/banner1.png')no-repeat scroll center  100%;
     width: 100%;
-} */
+    z-index: 999;
+}
+.team-area::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    border-radius: 6px;
+}
