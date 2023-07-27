@@ -5,6 +5,10 @@
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    
+}
+body{
+    background-color: #1D232A;;
 }
 h2{
     font-size: 48px;
@@ -28,6 +32,12 @@ h2{
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     border-radius: 8px;
+}
+.card{
+    background: transparent;
+}
+form.modal-box.flex.flex-col.items-center.justify-center {
+    background: #1D232A;
 }
 .single-items {
 	display: flex;
